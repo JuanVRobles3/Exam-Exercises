@@ -19,8 +19,8 @@ void rev_print(char *str)
 {
 	int j;
 
-	j = ft_strlen(str);
-	while (str[j])
+	j = ft_strlen(str) - 1;
+	while (j >= 0)
 	{
 		ft_putchar(str[j]);
 		j--;
@@ -34,3 +34,4 @@ int main (int argc, char **argv)
 	ft_putchar('\n');
 	return (0);
 }
+
